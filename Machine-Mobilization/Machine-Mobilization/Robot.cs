@@ -1,5 +1,5 @@
 ﻿namespace Machine_Mobilization;
 
-internal class Player
+internal class Robot
 {
 }
