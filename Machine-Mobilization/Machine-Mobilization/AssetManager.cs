@@ -6,7 +6,7 @@ namespace Machine_Mobilization;
 internal class AssetManager
 {
 	public Texture? GetTexture(string name) =>
-		this._textures.TryGetValue(name, out Texture? _) ? this._textures[name] : null;
+		this._textures.TryGetValue(name, out Texture? texture) ? texture : null;
 
 	public Texture? LoadTexture(string name, string filename)
 	{
@@ -22,7 +22,6 @@ internal class AssetManager
 
 	public void UnloadTexture(string name) => this._textures.Remove(name);
 	public void ClearTextures()            => this._textures.Clear();
-
 
 	private readonly Dictionary<string, Texture> _textures = new();
 }
