@@ -16,6 +16,8 @@ internal static class Game
 
 	public static List<Robot> Robots { get; set; } = new(8);
 
+	public static void Init() { }
+
 	public static void Close()
 	{
 		Window.Close();
