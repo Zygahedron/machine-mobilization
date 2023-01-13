@@ -1,7 +1,7 @@
-﻿
-using SFML.Graphics;
+﻿using SFML.Graphics;
 using SFML.Window;
 using System.Collections.Generic;
+using SFML.System;
 
 namespace Machine_Mobilization;
 
@@ -23,4 +23,3 @@ internal static class Game
 		Window.Close();
 	}
 }
-
